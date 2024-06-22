@@ -48,8 +48,6 @@ loginForm.addEventListener('submit', (e) => {
     }
 });
 
-console.log('Program finished');
-
 
 
 
