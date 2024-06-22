@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 1.5rem;
+    display: grid;
+    place-content: center;
+    #loginForm {
+        font-family: Geneva, Tahoma, sans-serif;
+        width: 20rem;
+        height: 25rem;
+        padding: 1.2em;
+        box-shadow: 0 0 15px grey;
+        .input-control {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            input {
+                padding: 0.5em;
+                margin: 0.2em 0;
+                font-size: 1rem;
+                border-radius: 0.2em;
+                border-width: 1px;
+                border-color: #ccc;
+                width: 100%;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            .input-error {
+                border-color: red;
+                input:focus {
+                    outline: 1px solid red;
+                }
+            }
+
+            .input-success {
+                border-color: #31d331;
+                input:focus {
+                    outline: 1px solid #31d331;
+                }
+            }
+        }
+
+        .errorMessage {
+            font-size: 0.8rem;
+            margin-bottom: 1em;
+            color: red;
+        }
+    }
+}
+
+
+
